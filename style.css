@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+}
+
+/* container */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #FCF1F5;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* box */
+.box {
+    width: 380px;
+    height: 360px;
+    background: #ffffff;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    outline: 1px solid #dddddd;
+    transition: 0.3s;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* links */
+.links {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    bottom: -50px;
+    transition: 0.5s
+}
+
+.links a i {
+    color: #ffffff;
+    background: #EE2C3C;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.box .box-content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.box .box-content h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.box .box-content p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #666666;
+}
+
+/* hovers */
+.box:hover {
+    outline-color: #EE2C3C;
+    box-shadow: 0px 5px 0px #EE2C3C;
+}
+
+.box:hover .img img {
+    transform: scale(1.1);
+}
+
+.box:hover .img .links {
+    bottom: 10px;
+}
+
+.links a i:hover {
+    transform: scale(1.1);
+}
